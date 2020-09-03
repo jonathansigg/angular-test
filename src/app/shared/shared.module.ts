@@ -35,12 +35,11 @@ const modules = [
 ];
 
 @NgModule({
-  declarations: [...components, ShellComponent],
+  declarations: [...components],
   imports: [...modules],
   exports: [
     ...components,
-    ...modules,
-    ShellComponent,
+    ...modules
   ]
 })
 export class SharedModule {}
